@@ -8,7 +8,7 @@ public class randomFood {
 	Random rand = new Random();
 	
 	public String foodName = null;
-	public int foodNumber = rand.nextInt((11 - 1) + 1) + 1;
+	public int foodNumber = rand.nextInt((15 - 1) + 1) + 1;
 	public int foodCount = rand.nextInt((5 - 1) + 1) + 1;
 	
 	void generateFood() {
@@ -24,11 +24,11 @@ public class randomFood {
 				
 				if (foodCount > 1) 
 				{
-					foodName = "fruits";
+					foodName = "lettuce";
 				}
 				else 
 				{
-					foodName = "fruit";
+					foodName = "lettuces";
 				}
 				break;
 			}
@@ -116,6 +116,45 @@ public class randomFood {
 				break;
 			}
 			case 11 : {
+
+				if (foodCount > 1) 
+				{
+					foodName = "tomatoes";
+				}
+				else
+				{
+					foodName = "tomato";
+				}
+				break;
+			}
+			case 12 : {
+
+				if (foodCount > 1)
+				{
+					foodName = "potatoes";
+				}
+				else
+				{
+					foodName = "potato";
+				}
+				break;
+			}
+			case 13 : {
+				foodName = "cabbage";
+				break;
+			}
+			case 14 : {
+
+				if (foodCount > 1)
+				{
+					foodName = "cucumbers";
+				}
+				else
+				{
+					foodName = "cucumber"
+				}
+			}
+			case 15 : {
 				foodName = null;
 				break;
 			}
